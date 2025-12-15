@@ -1,0 +1,30 @@
+{
+  "name": "samuelsilva/slim-framework",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Samuel Oliveira",
+      "email": "samueloliveira900@gmail.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "4.15",
+    "slim/psr7": "1.7",
+    "php-di/php-di": "7.0",
+    "vlucas/phpdotenv": "5.6",
+    "illuminate/database": "11.0",
+    "eftec/bladeone": "^4.19"
+  },
+  "require-dev": {
+    "robmorgan/phinx": "^0.16.10"
+  },
+  "scripts": {
+  "migrate": "phinx migrate",
+  "rollback": "phinx rollback",
+  "status": "phinx status"
+}
+}
